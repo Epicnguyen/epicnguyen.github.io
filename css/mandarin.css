@@ -3,5 +3,62 @@ body{
 }
 
 h1 {
+  font-family: Bangers, Hero, sans-serif;
   color:white;
+}
+
+h4{
+  font-family: Bangers, Hero, sans-serif;
+  color: #ffe29c;
+}
+
+img {
+  
+}
+.contentsdiv {
+  font-family: Hero, sans-serif;
+  background-color: #ffe29c;
+  color: black;
+  border: 2px solid black;
+  width:200px;
+  padding-left: 10px;
+  padding top: 10px;
+  border-radius: 30px 30px 30px 30px;
+}
+.contentsdiv h2 {
+  font-family: Bangers, ComicBook, sans-serif;
+}
+.contentsdiv li {
+  color: black;
+}
+
+.sectiondiv {
+  padding-top:5px;
+  font-family: Hero, sans-serif;
+  color: white;
+}
+
+.sectiondiv li {
+  color: #ffe29c;
+}
+
+.earlydiv {
+  font-family: Hero, sans-serif;
+  color:white;
+}
+
+#abilityheader {
+    color: #ffe29c;
+}
+
+.triviadiv {
+  font-family: Hero, sans-serif;
+  color:white;
+}
+
+.triviadiv li{
+  color: #ffe29c;
+}
+h3 {
+  font-family: Hero, sans-serif;
 }
