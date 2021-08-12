@@ -1,0 +1,9 @@
+header {
+  text-align:center;
+}
+
+.parallax {
+  background-image:url("../assets/dimension_defenders.png");
+  height:500;
+  width:1000;
+}
