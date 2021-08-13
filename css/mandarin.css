@@ -17,20 +17,28 @@ img {
 }
 
 nav {
-  font-family: Hero, sans-serif;
   background-color: #ffe29c;
-  color: black;
-  border: 2px solid black;
-  width:200px;
+  font-family: Hero, 'Nunito', sans-sans-serif;
+  text-align: left;
+  float:left;
+  position: sticky;
+  top:100px;
+  border: 2px solid white;
+  border-radius: 10px;
+  display:inline-block;
+  width:160px;
+  height:200px;
   padding-left: 10px;
-  padding top: 10px;
-  border-radius: 30px 30px 30px 30px;
 }
 nav h2 {
   font-family: Bangers, ComicBook, sans-serif;
 }
 nav li {
   color: black;
+}
+
+div{
+  margin-left: 180px;
 }
 
 .sectiondiv {
