@@ -1,0 +1,219 @@
+
+
+body {
+  height: 100%;
+  background-color: rgba(239,239,208,1);
+  background-image: url("../assets/Paper_Texture.jpg");
+  background-size:cover;
+  background-blend-mode: overlay;
+  background-position: center;
+  font-family: Hero, Quicksand, sans-serif;
+}
+
+/* Style the side navigation */
+nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #408cff;
+    overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+nav a {
+    font-family: Hero, Quicksand, sans-serif;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+nav a:hover {
+    background-color: #f7c59f;
+    color: #0a4194;
+}
+
+/* Change the size and alignment of the logo */
+nav img{
+  width:150px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+/* Change logo on hover */
+nav img:hover {
+  border-radius: 10px;
+  background-color: #efefd0;
+}
+
+main {
+  margin-left:200px;
+}
+
+header {
+  margin-left: 200px;
+  font-family: September, Hero, Quicksand, sans-serif;
+}
+
+/* Show the user they are on the contact page */
+
+#contact {
+  color: #efefd0;
+}
+
+.contactInfo h2 {
+  text-decoration:underline;
+}
+/* Style Contact links */
+.contactInfo a{
+  text-decoration: none;
+  color: #408cff;
+}
+
+/* Style Contact Link hovers */
+
+.contactInfo a:hover{
+  text-decoration: underline;
+  color: #ff6b35;
+}
+
+/* set layout for mobile */
+@media screen and (max-width:900px) {
+
+  input {
+    background-color:#efefd0;
+    background-image: url('../assets/Paper_Texture.jpg');
+    background-blend-mode: color-burn;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    border-radius: 15px;
+    width:90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom:10px;
+    padding:10px;
+  }
+
+  input[type="submit"], input[type="reset"] {
+    height: 50px;
+    width:125px;
+    padding:10px;
+    margin-top: 5px;
+    margin-bottom:5px;
+  }
+
+  input[type="submit"] {
+    float: left;
+  }
+
+  input[type="reset"] {
+    float:right;
+  }
+
+  textarea {
+    border-radius: 15px;
+    width:90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding:10px;
+  }
+
+  .contactInfo {
+    display:block;
+    padding:5px;
+    margin-bottom:10px;
+    clear:both;
+    height: 300px;
+    border-style: none;
+    text-align: center;
+  }
+}
+/*set layout for website */
+
+@media screen and (min-width:900px) {
+
+  div {
+    display: block;
+    border: 2px solid;
+    border-radius: 10px;
+    padding:5px;
+    float:left;
+    position:absolute;
+    width:45vw;
+  }
+
+  .contactInfo {
+    border-style: none;
+    height: 300px;
+    left: 210px;
+    top: 200px;
+    width:15vw;
+    text-align: center;
+  }
+
+  form {
+    position:absolute;
+    display:block;
+    width:60vw;
+    left:40vw;
+    top:200px;
+  }
+
+  input {
+    border-radius: 15px;
+    width:90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom:10px;
+    padding:10px;
+  }
+
+  input[type="submit"], input[type="reset"] {
+    height: 50px;
+    width:150px;
+    padding:10px;
+    margin-top: 5px;
+    margin-bottom:5px;
+  }
+
+  input[type="submit"] {
+    float: left;
+  }
+
+  input[type="reset"] {
+    float:right;
+  }
+
+  textarea {
+    border-radius: 15px;
+    width:90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding:10px;
+  }
+/* old div code */
+/*  .email {
+    top: 200px;
+    left:40vw;
+  }
+
+  .subject {
+    top:240px;
+    left:40vw;
+  }
+
+  .message {
+    top: 280px;
+    left:40vw;
+    height:240px;
+  } */
+
+}

@@ -1,0 +1,124 @@
+
+body {
+  height: 100%;
+  background-color: rgba(239,239,208,1);
+  background-image: url("../assets/Paper_Texture.jpg");
+  background-size:cover;
+  background-blend-mode: overlay;
+  background-position: center;
+}
+
+
+menu {
+display: grid;
+justify-content:center;
+grid-template-columns: 30% 30%;
+grid-template-rows: 60% 60%;
+align-items: baseline;
+}
+
+
+menu img {
+  display:block;
+  width: 25vw;
+  height: auto;
+}
+ /*Remove underlines*/
+a {
+  text-decoration: none;
+}
+
+/*Set the opacity and ease of the overlays*/
+.overlay{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width:100%;
+  opacity: 0;
+  font-family: Hero, Quicksand, sans-serif;
+  transition: 0.5s ease;
+}
+
+/*Give each element a hover border*/
+.T {
+  display:block;
+  margin-right: auto;
+}
+
+.T .overlay {
+  position: inherit;
+  text-align: center;
+  color: #0a4194;
+}
+.T:hover .overlay{
+  opacity:1;
+}
+
+.O {
+  display:block;
+  margin-right: auto;
+}
+
+.O .overlay {
+  position: inherit;
+  text-align: center;
+  color: #ff6b35;
+}
+.O:hover .overlay{
+  opacity:1;
+}
+
+.A {
+  display:block;
+  margin-right: auto;
+}
+
+.A .overlay {
+  position: inherit;
+  text-align: center;
+  color: #ff6b35;
+}
+.A:hover .overlay{
+  opacity:1;
+}
+
+.N {
+  display:block;
+  margin-right: auto;
+}
+
+.N .overlay {
+  position: inherit;
+  text-align: center;
+  color: #408cff;
+}
+.N:hover .overlay{
+  opacity:1;
+}
+
+header {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  font-family: September, Hero, Quicksand, sans-serif;
+  color: #ff6b35;
+  text-shadow:2px 2px 5px #408cff;
+}
+
+.description {
+  text-align: center;
+  margin-top:10vh;
+  font-family: September, Hero, Quicksand, sans-serif;
+  color: #ff6b35;
+  text-shadow: 2px 2px 5px #408cff;
+}
+
+.footer {
+  position: absolute;
+  top: 80vh;
+  font-family: Hero, Quicksand, sans-serif;
+}

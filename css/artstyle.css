@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: rgba(239,239,208,1);
+  background-image: url("../assets/Paper_Texture.jpg");
+  background-size:cover;
+  background-blend-mode: overlay;
+  background-position: center;
+  font-family: Hero, Quicksand, sans-serif;
+
+}
+
+h2 {
+  font-family: September, Hero, sans-serif;
+}
+/* Style the side navigation */
+nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #408cff;
+    overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+nav a {
+    font-family: Hero, Quicksand, sans-serif;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+nav a:hover {
+    background-color: #f7c59f;
+    color: #0a4194;
+}
+
+/* Change the size and alignment of the logo */
+nav img{
+  width:150px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+/* Change logo on hover */
+nav img:hover {
+  border-radius: 10px;
+  background-color: #efefd0;
+}
+
+#artwork {
+  color:white
+}
+/* Style the content */
+.content {
+    font-family: Hero, Quicksand, sans-serif;
+    margin-left: 200px;
+    padding-left: 20px;
+}
+
+.content h2{
+  font-weight: bold;
+}
+
+/* Organize the Portfolio Grid */
+
+.portfolioGrid {
+  display:grid;
+  justify-content: center;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 50% 50%;
+  margin-left: 200px;
+}
+
+.portfolioGrid img {
+  margin:2vw;
+  height: 30vh;
+  width: 20vw;
+  border-radius: 20px;
+}
+.portfolioGrid img:hover{
+  border: 2px solid #ff6b35;
+  border-radius: 20px;
+}
+
+.footer {
+  padding-left: 200px;
+  font-family: Hero, Quicksand, sans-serif;
+  height:200px;
+  background-color: #0a4194;
+}
