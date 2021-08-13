@@ -1,4 +1,6 @@
-
+*{
+  font-family: Hero, Quicksand, sans-serif;
+}
 
 body {
   height: 100%;
@@ -42,7 +44,6 @@ nav a:hover {
 nav img{
   width:150px;
   margin-top: 10px;
-  margin-left: 10px;
   padding: 10px;
 }
 
@@ -111,14 +112,23 @@ header {
   }
 
   input[type="submit"] {
+    background-color:#f7c59f;
     float: left;
   }
 
   input[type="reset"] {
+    background-color:#f7c59f;
     float:right;
   }
 
   textarea {
+    background-color:#efefd0;
+    background-image: url('../assets/Paper_Texture.jpg');
+    background-blend-mode: color-burn;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
     border-radius: 15px;
     width:90%;
     margin-left: 4%;
@@ -168,6 +178,13 @@ header {
   }
 
   input {
+    background-color:#efefd0;
+    background-image: url('../assets/Paper_Texture.jpg');
+    background-blend-mode: color-burn;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
     border-radius: 15px;
     width:90%;
     margin-left: 4%;
@@ -185,14 +202,23 @@ header {
   }
 
   input[type="submit"] {
+    background-color:#f7c59f;
     float: left;
   }
 
   input[type="reset"] {
+    background-color:#f7c59f;
     float:right;
   }
 
   textarea {
+    background-color:#efefd0;
+    background-image: url('../assets/Paper_Texture.jpg');
+    background-blend-mode: color-burn;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
     border-radius: 15px;
     width:90%;
     margin-left: 4%;
