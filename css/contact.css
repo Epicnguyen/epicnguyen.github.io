@@ -1,5 +1,19 @@
+/* import hero font */
+
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-weight: lighter;
+}
+
 *{
-  font-family: Hero, Quicksand, sans-serif;
+  font-family: 'Hero', Quicksand, sans-serif;
 }
 
 body {
@@ -9,7 +23,7 @@ body {
   background-size:cover;
   background-blend-mode: overlay;
   background-position: center;
-  font-family: Hero, Quicksand, sans-serif;
+  font-family: 'Hero', Quicksand, sans-serif;
 }
 
 /* Style the side navigation */
@@ -27,7 +41,7 @@ nav {
 
 /* Side navigation links */
 nav a {
-    font-family: Hero, Quicksand, sans-serif;
+    font-family: 'Hero', Quicksand, sans-serif;
     color: black;
     padding: 16px;
     text-decoration: none;
@@ -59,7 +73,7 @@ main {
 
 header {
   margin-left: 200px;
-  font-family: September, Hero, Quicksand, sans-serif;
+  font-family: September, 'Hero', Quicksand, sans-serif;
 }
 
 /* Show the user they are on the contact page */
@@ -90,11 +104,12 @@ header {
   input {
     background-color:#efefd0;
     background-image: url('../assets/Paper_Texture.jpg');
-    background-blend-mode: color-burn;
+    background-blend-mode: overlay;
     background-size:cover;
     background-position: center;
     background-repeat:no-repeat;
     background-attachment:fixed;
+    color:darkgrey;
     border-radius: 15px;
     width:90%;
     margin-left: 4%;
@@ -114,22 +129,25 @@ header {
   input[type="submit"] {
     background-color:#f7c59f;
     float: left;
+    color:#0a4194;
   }
 
   input[type="reset"] {
-    background-color:#f7c59f;
+    background-color:#0a4194;
     float:right;
+    color:#f7c59f;
   }
 
   textarea {
     background-color:#efefd0;
     background-image: url('../assets/Paper_Texture.jpg');
-    background-blend-mode: color-burn;
+    background-blend-mode: overlay;
     background-size:cover;
     background-position: center;
     background-repeat:no-repeat;
     background-attachment:fixed;
     border-radius: 15px;
+    color:darkgrey;
     width:90%;
     margin-left: 4%;
     margin-right: 4%;
@@ -180,12 +198,13 @@ header {
   input {
     background-color:#efefd0;
     background-image: url('../assets/Paper_Texture.jpg');
-    background-blend-mode: color-burn;
+    background-blend-mode: overlay;
     background-size:cover;
     background-position: center;
     background-repeat:no-repeat;
     background-attachment:fixed;
     border-radius: 15px;
+    color:darkgrey;
     width:90%;
     margin-left: 4%;
     margin-right: 4%;
@@ -204,42 +223,45 @@ header {
   input[type="submit"] {
     background-color:#f7c59f;
     float: left;
+    color:#0a4194;
   }
 
   input[type="reset"] {
-    background-color:#f7c59f;
+    background-color:#0a4194;
     float:right;
+    color:#f7c59f;
   }
 
   textarea {
     background-color:#efefd0;
     background-image: url('../assets/Paper_Texture.jpg');
-    background-blend-mode: color-burn;
+    background-blend-mode: overlay;
     background-size:cover;
     background-position: center;
     background-repeat:no-repeat;
     background-attachment:fixed;
     border-radius: 15px;
+    color:darkgrey;
     width:90%;
     margin-left: 4%;
     margin-right: 4%;
     padding:10px;
   }
-/* old div code */
-/*  .email {
-    top: 200px;
-    left:40vw;
+  footer {
+    position: absolute;
+    top:80vh;
+    padding-left: 200px;
+    font-family: Hero, Quicksand, sans-serif;
+    width:100%;
+    height:200px;
+    background-color: #0a4194;
   }
 
-  .subject {
-    top:240px;
-    left:40vw;
-  }
+}
 
-  .message {
-    top: 280px;
-    left:40vw;
-    height:240px;
-  } */
-
+footer {
+  padding-left: 200px;
+  font-family: 'Hero', Quicksand, sans-serif;
+  height:200px;
+  background-color: #0a4194;
 }
