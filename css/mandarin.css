@@ -13,9 +13,10 @@ h4{
 }
 
 img {
-  
+
 }
-.contentsdiv {
+
+nav {
   font-family: Hero, sans-serif;
   background-color: #ffe29c;
   color: black;
@@ -25,10 +26,10 @@ img {
   padding top: 10px;
   border-radius: 30px 30px 30px 30px;
 }
-.contentsdiv h2 {
+nav h2 {
   font-family: Bangers, ComicBook, sans-serif;
 }
-.contentsdiv li {
+nav li {
   color: black;
 }
 
