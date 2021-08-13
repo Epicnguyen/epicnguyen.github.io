@@ -26,3 +26,11 @@ nav {
 .overview {
   font-style: Hero, 'Nunito', sans-serif;
 }
+
+div {
+  font-family: Hero, 'Nunito', sans-serif;
+}
+
+div h3 {
+  text-decoration: underline;
+}
