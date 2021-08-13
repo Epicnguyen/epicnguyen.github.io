@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;700&display=swap');
 
 *{
-  font-family: 'Nunito', Hero, sans-serif;
+  font-family:  Hero, 'Nunito', sans-serif;
+  color:white;
+}
+
+a {
+  color:rgb(236, 229, 72);
+}
+
+a:hover {
+  color:rgb(126, 236, 255);
+}
+
+body{
+  background-color: rgb(9, 0, 38);
 }
 
 header {
+
   text-align:center;
   margin-left: 0px;
   background-color: rgba(0,0,0,0);
