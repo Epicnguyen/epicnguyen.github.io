@@ -1,3 +1,17 @@
+/* import hero font */
+
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-weight: lighter;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -9,12 +23,12 @@ body {
   background-size:cover;
   background-blend-mode: overlay;
   background-position: center;
-  font-family: Hero, Quicksand, sans-serif;
+  font-family: 'Hero', Quicksand, sans-serif;
 
 }
 
 h2 {
-  font-family: September, Hero, sans-serif;
+  font-family: September, 'Hero', sans-serif;
 }
 /* Style the side navigation */
 nav {
@@ -63,7 +77,7 @@ nav img:hover {
 }
 /* Style the content */
 .content {
-    font-family: Hero, Quicksand, sans-serif;
+    font-family: 'Hero', Quicksand, sans-serif;
     margin-left: 200px;
     padding-left: 20px;
 }
@@ -168,9 +182,15 @@ nav img:hover {
 }
 
 
-.footer {
+footer {
+  text-align: center;
   padding-left: 200px;
-  font-family: Hero, Quicksand, sans-serif;
+  font-family: 'Hero', Quicksand, sans-serif;
   height: 100px;
-  background-color: #0a4194;
+  color: #0a4194;
+}
+
+footer hr {
+  border:1px solid #ff6b35;
+  width:50vw;
 }

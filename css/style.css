@@ -1,3 +1,16 @@
+/* import hero font */
+
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-weight: lighter;
+}
 
 body {
   height: 100%;
