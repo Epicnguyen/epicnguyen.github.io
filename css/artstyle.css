@@ -74,28 +74,103 @@ nav img:hover {
 
 /* Organize the Portfolio Grid */
 
+
 .portfolioGrid {
-  display:grid;
-  justify-content: center;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 50% 50%;
   margin-left: 200px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 2%;
+  grid-row-gap:2%;
+  align-content:center;
+  padding: 10px;
 }
 
-.portfolioGrid img {
-  margin:2vw;
-  height: 30vh;
-  width: 20vw;
-  border-radius: 20px;
+@media screen and (max-width:900px) {
+
+  .portfolioGrid{
+    grid-template-columns:auto auto;
+    justify-content: center;
+    grid-column-gap:10%;
+  }
+
+  .grid-item {
+    height:25vw;
+    width:25vw;
+  }
+
+  #item5 {
+    height:50vw;
+    width:50vw;
+  }
 }
-.portfolioGrid img:hover{
-  border: 2px solid #ff6b35;
-  border-radius: 20px;
+
+.grid-item {
+  height:15vw;
+  width:15vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 10px;
 }
+
+.grid-item:hover{
+  box-shadow: 0px 0px 10px #ff6b35;
+}
+
+#item1 {
+  background-image: url('../assets/Clyde.jpg');
+}
+
+#item2 {
+  background-image: url('../assets/Metal Bug armor.png');
+}
+
+#item3 {
+  background-image: url('../assets/Typography.png');
+}
+
+#item4 {
+  background-image: url('../assets/DoubleExposure.jpg');
+}
+
+#item5{
+  background-image: url('../assets/dimension defenders final.png');
+  background-position: left;
+  height:30vw;
+  width:30vw;
+  grid-column:1/3;
+  grid-row: 2/4;
+}
+
+#item6 {
+  background-image: url('../assets/GlowEffect.jpg');
+}
+
+#item7 {
+  background-image: url('../assets/GlowEffect2.jpg');
+}
+
+#item8 {
+  background-image: url('../assets/Minimal_Soul.png');
+}
+
+#item9 {
+  background-image: url('../assets/Minimal_Spiderman.png');
+}
+
+#item10, #item11, #item12, #item13 {
+  opacity: 0;
+}
+
 
 .footer {
   padding-left: 200px;
   font-family: Hero, Quicksand, sans-serif;
-  height:200px;
+  height: 100px;
   background-color: #0a4194;
 }
