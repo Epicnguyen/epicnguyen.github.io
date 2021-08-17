@@ -1,0 +1,151 @@
+/* import hero font */
+
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-weight: lighter;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: rgba(239,239,208,1);
+  background-image: url("../assets/Paper_Texture.jpg");
+  background-size:cover;
+  background-blend-mode: overlay;
+  background-position: center;
+  font-family: 'Hero', Quicksand, sans-serif;
+
+}
+
+h2 {
+  font-family: September, 'Hero', sans-serif;
+}
+/* Style the side navigation */
+nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #408cff;
+    overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+nav a {
+    font-family: Hero, Quicksand, sans-serif;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+nav a:hover {
+    background-color: #f7c59f;
+    color: #0a4194;
+}
+
+/* Change the size and alignment of the logo */
+nav img{
+  width:150px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+/* Change logo on hover */
+nav img:hover {
+  border-radius: 10px;
+  background-color: #efefd0;
+}
+
+#animations {
+  color:white
+}
+/* Style the content */
+.content {
+    font-family: 'Hero', Quicksand, sans-serif;
+    margin-left: 200px;
+    padding-left: 20px;
+}
+
+.content h2{
+  font-weight: bold;
+}
+
+main {
+  margin-left: 200px;
+}
+/* Organize the Portfolio Grid */
+
+.animationGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2%;
+  grid-row-gap:2%;
+  align-content:center;
+  padding: 10px;
+}
+
+@media screen and (max-width:900px) {
+
+  .animationGrid{
+    grid-template-columns:auto;
+    justify-content: center;
+    grid-column-gap:10%;
+  }
+
+  .grid-item {
+    height:25vw;
+    width:25vw;
+  }
+
+  #item5 {
+    height:50vw;
+    width:50vw;
+  }
+}
+
+video{
+  height:30vw;
+  width:30vw;
+  border-radius: 15px;
+  background-color: #ff6b35;
+  box-shadow: 0px 5px 10px;
+}
+
+video:hover{
+  box-shadow: 0px 0px 10px #ff6b35;
+}
+
+
+#item10, #item11, #item12, #item13 {
+  opacity: 0;
+}
+
+
+footer {
+  text-align: center;
+  padding-left: 200px;
+  font-family: 'Hero', Quicksand, sans-serif;
+  height: 100px;
+  color: #0a4194;
+}
+
+footer hr {
+  border:1px solid #ff6b35;
+  width:50vw;
+}
