@@ -130,8 +130,14 @@ header {
   text-shadow: 2px 2px 5px #408cff;
 }
 
-.footer {
-  position: absolute;
-  top: 80vh;
-  font-family: Hero, Quicksand, sans-serif;
+footer {
+  text-align: center;
+  font-family: 'Hero', Quicksand, sans-serif;
+  height: 100px;
+  color: #0a4194;
+}
+
+footer hr {
+  border:1px solid #ff6b35;
+  width:50vw;
 }
