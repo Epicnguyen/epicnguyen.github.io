@@ -132,6 +132,11 @@ video:hover{
   box-shadow: 0px 0px 10px #ff6b35;
 }
 
+.animationGrid h2 {
+  text-align: center;
+  background-color: red;
+}
+
 
 footer {
   text-align: center;
