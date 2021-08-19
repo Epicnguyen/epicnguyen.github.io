@@ -12,6 +12,12 @@
   font-weight: lighter;
 }
 
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-weight: bold;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -28,7 +34,7 @@ body {
 }
 
 h2 {
-  font-family: September, 'Hero', sans-serif;
+  font-family:'Hero', Quicksand, sans-serif;
 }
 /* Style the side navigation */
 nav {
@@ -45,7 +51,8 @@ nav {
 
 /* Side navigation links */
 nav a {
-    font-family: Hero, Quicksand, sans-serif;
+    font-family: 'Hero', Quicksand, sans-serif;
+    font-weight:bold;
     color: black;
     padding: 16px;
     text-decoration: none;
@@ -75,16 +82,6 @@ nav img:hover {
 #animations {
   color:white
 }
-/* Style the content */
-.content {
-    font-family: 'Hero', Quicksand, sans-serif;
-    margin-left: 200px;
-    padding-left: 20px;
-}
-
-.content h2{
-  font-weight: bold;
-}
 
 main {
   margin-left: 200px;
@@ -98,27 +95,8 @@ main {
   grid-row-gap:2%;
   align-content:center;
   padding: 10px;
-  margin-bottom:50px;
 }
 
-@media screen and (max-width:900px) {
-
-  .animationGrid{
-    grid-template-columns:auto;
-    justify-content: center;
-    grid-column-gap:10%;
-  }
-
-  .grid-item {
-    height:25vw;
-    width:25vw;
-  }
-
-  #item5 {
-    height:50vw;
-    width:50vw;
-  }
-}
 
 video{
   height:30vw;
@@ -133,16 +111,16 @@ video:hover{
 }
 
 .animationGrid h2 {
+  width:30vw;
   text-align: center;
-  background-color: red;
 }
 
 
 footer {
   text-align: center;
   font-family: 'Hero', Quicksand, sans-serif;
-  height: 100px;
   color: #0a4194;
+  margin-top: 100px;
 }
 
 footer hr {

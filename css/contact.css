@@ -12,6 +12,12 @@
   font-weight: lighter;
 }
 
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-weight: bold;
+}
+
 *{
   font-family: 'Hero', Quicksand, sans-serif;
 }

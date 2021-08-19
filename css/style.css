@@ -12,6 +12,12 @@
   font-weight: lighter;
 }
 
+@font-face {
+  font-family: "Hero";
+  src:url('../assets/Fonts/Hero/Hero.otf');
+  font-weight: bold;
+}
+
 body {
   height: 100%;
   background-color: rgba(239,239,208,1);
