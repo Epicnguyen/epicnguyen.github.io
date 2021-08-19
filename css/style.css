@@ -36,6 +36,20 @@ body {
   }
 }
 
+
+footer {
+  clear:both;
+  text-align:center;
+  padding-top:50px;
+  font-family:'Hero', Quicksand, sans-serif;
+  color:#0a4194;
+}
+
+footer hr {
+  border:1px solid #ff6b35;
+  width:50vw;
+}
+
 menu {
 display: grid;
 justify-content:center;
@@ -537,17 +551,3 @@ video:hover{
 
 }
 /*End contact Page Code*/
-
-footer {
-  clear:both;
-  text-align: center;
-  padding-top: 50px;
-  font-family: 'Hero', Quicksand, sans-serif;
-  height: 100px;
-  color: #0a4194;
-}
-
-footer hr {
-  border:1px solid #ff6b35;
-  width:50vw;
-}
