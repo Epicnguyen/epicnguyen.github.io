@@ -27,6 +27,13 @@ body {
   background-position: center;
 }
 
+/*Adjust font sizes for displays*/
+
+@media only screen and (max-width:900px){
+  body{
+    font-size: 120%;
+  }
+}
 
 menu {
 display: grid;
@@ -124,7 +131,7 @@ header {
   margin-left:auto;
   margin-right:auto;
   text-align: center;
-  font-family: September, Hero, Quicksand, sans-serif;
+  font-family: 'Hero', Quicksand, sans-serif;
   color: #ff6b35;
   text-shadow:2px 2px 5px #408cff;
 }
@@ -132,7 +139,7 @@ header {
 .description {
   text-align: center;
   margin-top:10vh;
-  font-family: September, Hero, Quicksand, sans-serif;
+  font-family:'Hero', Quicksand, sans-serif;
   color: #ff6b35;
   text-shadow: 2px 2px 5px #408cff;
 }

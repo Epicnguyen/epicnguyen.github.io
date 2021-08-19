@@ -32,6 +32,14 @@ body {
   font-family: 'Hero', Quicksand, sans-serif;
 }
 
+/*Adjust font sizes for displays*/
+
+@media only screen and (max-width:900px){
+  body{
+    font-size: 120%;
+  }
+}
+
 /* Style the side navigation */
 nav {
     height: 100%;

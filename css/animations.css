@@ -33,6 +33,14 @@ body {
 
 }
 
+/*Adjust font sizes for displays*/
+
+@media only screen and (max-width:900px){
+  body{
+    font-size: 120%;
+  }
+}
+
 h2 {
   font-family:'Hero', Quicksand, sans-serif;
 }
