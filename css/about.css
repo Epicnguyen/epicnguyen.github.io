@@ -31,7 +31,7 @@ body {
   background-position: center;
   font-family: 'Hero', Quicksand, sans-serif;
   font-size: 100%;
-  line-height: 1.65;
+  line-height: 1.65;s
 }
 
 /*Adjust font sizes for displays*/
@@ -94,7 +94,7 @@ header {
   font-family: September, 'Hero', Quicksand, sans-serif;
 }
 
- #toan {
+.aboutMain img {
   display:block;
   border: 5px solid #ff6b35;
   border-bottom-color:rgba(255, 107, 54, 0.5);
