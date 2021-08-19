@@ -94,29 +94,7 @@ header {
   font-family: September, 'Hero', Quicksand, sans-serif;
 }
 
-/* Show the user they are on the contact page */
-
-#about {
-  color: #efefd0;
-}
-/*Adjust Placement for web*/
-@media only screen and (min-width:900px) {
-
-  main {
-    display:flex;
-  }
-
-  main img {
-    align-self: center;
-  }
-
-  section {
-    margin-left: 2vw;
-  }
-}
-
-/*Placement and size for mobile*/
-main img{
+ #toan {
   display:block;
   border: 5px solid #ff6b35;
   border-bottom-color:rgba(255, 107, 54, 0.5);

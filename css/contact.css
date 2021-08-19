@@ -86,8 +86,7 @@ main {
 }
 
 header {
-  margin-left: 200px;
-  font-family: September, 'Hero', Quicksand, sans-serif;
+  font-family:'Hero', Quicksand, sans-serif;
 }
 
 /* Show the user they are on the contact page */
@@ -99,6 +98,7 @@ header {
 .contactInfo h2 {
   text-decoration:underline;
 }
+
 /* Style Contact links */
 .contactInfo a{
   text-decoration: none;
@@ -199,9 +199,6 @@ header {
 @media screen and (min-width:1000px) {
 
   div {
-    display: block;
-    border: 2px solid;
-    border-radius: 10px;
     padding:5px;
     float:left;
     position:absolute;

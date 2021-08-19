@@ -20,6 +20,7 @@
 
 body {
   height: 100%;
+  font-family: 'Hero', Quicksand, sans-serif;
   background-color: rgba(239,239,208,1);
   background-image: url("../assets/Paper_Texture.jpg");
   background-size:cover;
@@ -144,7 +145,390 @@ header {
   text-shadow: 2px 2px 5px #408cff;
 }
 
+/* Style the side navigation */
+nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #408cff;
+    overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+nav a {
+    font-family: 'Hero', Quicksand, sans-serif;
+    font-weight:bold;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+nav a:hover {
+    background-color: #f7c59f;
+    color: #0a4194;
+}
+
+/* Change the size and alignment of the logo */
+nav img{
+  width:150px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 10px;
+}
+
+/* Change logo on hover */
+nav img:hover {
+  border-radius: 10px;
+  background-color: #efefd0;
+}
+/*end nav code */
+
+main {
+  margin-left: 200px;
+}
+
+/* Organize the Portfolio Grid */
+
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 2%;
+  grid-row-gap:7%;
+  align-content:center;
+  padding: 10px;
+}
+
+@media screen and (max-width:900px) {
+
+  .portfolioGrid{
+    grid-template-columns:auto auto;
+    justify-content: center;
+    grid-column-gap:10%;
+    grid-row-gap:7vh;
+  }
+
+  .grid-item {
+    height:25vw;
+    width:25vw;
+  }
+
+  #item5 {
+    height:50vw;
+    width:50vw;
+    padding-top:
+  }
+}
+
+.grid-item {
+  height:15vw;
+  width:15vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 15vw;
+  font-size:90%;
+  color:#ff6b35;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 2px 10px black;
+}
+
+.grid-item:hover{
+  box-shadow: 0px 0px 10px #ff6b35;
+}
+
+#item1 {
+  background-image: url('../assets/Clyde.jpg');
+}
+
+#item2 {
+  background-image: url('../assets/Metal Bug armor.png');
+}
+
+#item3 {
+  background-image: url('../assets/Typography.png');
+}
+
+#item4 {
+  background-image: url('../assets/DoubleExposure.jpg');
+}
+
+#item5{
+  background-image: url('../assets/dimension defenders final.png');
+  background-position: left;
+  height:30vw;
+  width:30vw;
+  padding-top:30vw;
+  grid-column:1/3;
+  grid-row: 2/4;
+}
+
+#item6 {
+  background-image: url('../assets/GlowEffect.jpg');
+}
+
+#item7 {
+  background-image: url('../assets/GlowEffect2.jpg');
+}
+
+#item8 {
+  background-image: url('../assets/Minimal_Soul.png');
+}
+
+#item9 {
+  background-image: url('../assets/Minimal_Spiderman.png');
+}
+
+#item10, #item11, #item12, #item13 {
+  opacity: 0;
+}
+/*End Portfolio Grid code*/
+
+/* Organize the animation gallery */
+
+.animationGrid {
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2%;
+  grid-row-gap:2%;
+  align-content:center;
+  padding: 10px;
+}
+
+
+video{
+  height:30vw;
+  width:30vw;
+  border-radius: 15px;
+  background-color: #0a4194;
+  box-shadow: 0px 5px 10px;
+}
+
+video:hover{
+  box-shadow: 0px 0px 10px #ff6b35;
+}
+
+.animationGrid h2 {
+  width:30vw;
+  text-align: center;
+}
+
+/*End Animation Gallery Code*/
+
+/*Style Contact Page*/
+.contactInfo h2 {
+  text-decoration:underline;
+}
+
+/* Style Contact links */
+.contactInfo a{
+  text-decoration: none;
+  color: #408cff;
+}
+
+/* Style Contact Link hovers */
+
+.contactInfo a:hover{
+  text-decoration: underline;
+  color: #ff6b35;
+}
+
+/* set layout for mobile */
+@media screen and (max-width:1000px) {
+
+  form {
+    font-family: 'Hero', Quicksand, sans-serif;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    width:65vw;
+  }
+
+  input {
+    background-color:#efefd0;
+    background-image: url('../assets/Paper_Texture.jpg');
+    background-blend-mode: overlay;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    color:darkgrey;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: 'Hero', Quicksand, sans-serif;
+    width:90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom:10px;
+    padding:10px;
+  }
+
+  input[type="submit"], input[type="reset"] {
+    height: 50px;
+    width:125px;
+    padding:10px;
+    margin-top: 5px;
+    margin-bottom:5px;
+    border: none;
+    box-shadow: 0px 2px 5px black;
+  }
+
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    box-shadow:0px 2px 5px #408cff;
+  }
+
+
+  input[type="submit"] {
+    background-color:#f7c59f;
+    float: left;
+    color:#0a4194;
+  }
+
+  input[type="reset"] {
+    background-color:#0a4194;
+    float:right;
+    color:#f7c59f;
+  }
+
+  textarea {
+    background-color:#efefd0;
+    background-image: url('../assets/Paper_Texture.jpg');
+    background-blend-mode: overlay;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: 'Hero', Quicksand, sans-serif;
+    color:darkgrey;
+    width:90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding:10px;
+  }
+
+  .contactInfo {
+    display:block;
+    padding:5px;
+    margin-bottom:10px;
+    clear:both;
+    height: 300px;
+    border-style: none;
+    text-align: center;
+  }
+}
+/*set layout for website */
+
+@media screen and (min-width:900px) {
+
+  .contactInfo {
+    width: 45vw;
+    position: absolute;
+    height: 300px;
+    left: 210px;
+    top: 200px;
+    width:15vw;
+    text-align: center;
+  }
+
+  form {
+    position:absolute;
+    display:block;
+    width:55vw;
+    left:40vw;
+    top:200px;
+  }
+
+  input {
+    background-color:#efefd0;
+    background-image: url('../assets/Paper_Texture.jpg');
+    background-blend-mode: overlay;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    font-family: 'Hero', Quicksand, sans-serif;
+    border: 2px solid black;
+    border-radius: 15px;
+    color:darkgrey;
+    width:90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom:10px;
+    padding:5px;
+  }
+
+  input[type="submit"], input[type="reset"] {
+    height: 50px;
+    width:150px;
+    padding:10px;
+    margin-top: 5px;
+    margin-bottom:5px;
+    border:0px;
+    box-shadow: 0px 2px 5px black;
+  }
+
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    box-shadow:0px 2px 5px #408cff;
+  }
+
+  input[type="submit"] {
+    background-color:#f7c59f;
+    float: left;
+    color:#0a4194;
+  }
+
+  input[type="reset"] {
+    background-color:#0a4194;
+    float:right;
+    color:#f7c59f;
+  }
+
+  textarea {
+    background-color:#efefd0;
+    background-image: url('../assets/Paper_Texture.jpg');
+    background-blend-mode: overlay;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: 'Hero', Quicksand, sans-serif;
+    color:darkgrey;
+    width:90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding:5px;
+  }
+
+/*End contact Page Code*/
+
+/*About page*/
+#toan {
+  border: 5px solid #ff6b35;
+  border-bottom-color:rgba(255, 107, 54, 0.5);
+  border-left-color:rgb(255, 157, 54);
+  border-right-color:rgb(255, 157, 54);
+  box-shadow: 0px 3px 10px;
+  height:30vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* End About page*/
+
 footer {
+  margin-left: 200px;
   text-align: center;
   font-family: 'Hero', Quicksand, sans-serif;
   height: 100px;

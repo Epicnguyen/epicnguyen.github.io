@@ -100,11 +100,10 @@ main h2{
 
 
 .portfolioGrid {
-  margin-left: 200px;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 2%;
-  grid-row-gap:5%;
+  grid-row-gap:7%;
   align-content:center;
   padding: 10px;
 }
@@ -115,7 +114,7 @@ main h2{
     grid-template-columns:auto auto;
     justify-content: center;
     grid-column-gap:10%;
-    grid-row-gap:7%
+    grid-row-gap:7vh;
   }
 
   .grid-item {
@@ -126,6 +125,7 @@ main h2{
   #item5 {
     height:50vw;
     width:50vw;
+    padding-top:
   }
 }
 
@@ -197,7 +197,6 @@ main h2{
 
 footer {
   text-align: center;
-  padding-left: 200px;
   font-family: 'Hero', Quicksand, sans-serif;
   height: 100px;
   color: #0a4194;
