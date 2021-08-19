@@ -45,7 +45,8 @@ nav {
 
 /* Side navigation links */
 nav a {
-    font-family: Hero, Quicksand, sans-serif;
+    font-family: 'Hero', Quicksand, sans-serif;
+    font-weight:bold;
     color: black;
     padding: 16px;
     text-decoration: none;
