@@ -2,19 +2,19 @@
 
 @font-face {
   font-family: "Hero";
-  src:url('../assets/Fonts/Hero/Hero.otf');
+  src:url('../assets/fonts/Hero/Hero.otf');
   font-style: normal;
 }
 
 @font-face {
   font-family: "Hero";
-  src:url('../assets/Fonts/Hero/Hero.otf');
+  src:url('../assets/fonts/Hero/Hero.otf');
   font-weight: lighter;
 }
 
 @font-face {
   font-family: "Hero";
-  src:url('../assets/Fonts/Hero/Hero.otf');
+  src:url('../assets/fonts/Hero/Hero.otf');
   font-weight: bold;
 }
 
@@ -50,7 +50,7 @@ footer hr {
   width:50vw;
 }
 
-menu {
+.menu {
 display: grid;
 justify-content:center;
 grid-template-columns: 30% 30%;
@@ -59,7 +59,7 @@ align-items: baseline;
 }
 
 
-menu img {
+.menu img {
   display:block;
   width: 25vw;
   height: auto;
@@ -93,7 +93,7 @@ a {
 .T .overlay {
   position: inherit;
   text-align: center;
-  color: #0a4194;
+  color: #408cff;
 }
 .T:hover .overlay{
   opacity:1;
@@ -145,16 +145,14 @@ header {
   display:block;
   text-align: center;
   font-family: 'Hero', Quicksand, sans-serif;
-  color: #ff6b35;
-  text-shadow:2px 2px 5px #408cff;
 }
 
 .description {
   text-align: center;
+  text-decoration: none;
   margin-top:10vh;
   font-family:'Hero', Quicksand, sans-serif;
   color: #ff6b35;
-  text-shadow: 2px 2px 5px #408cff;
 }
 
 /* Style the side navigation */
@@ -206,7 +204,8 @@ main {
   margin-left: 200px;
 }
 
-h1{
+header h1{
+  color: #408cff;
   text-decoration: underline;
 }
 
@@ -242,7 +241,7 @@ h1{
     grid-template-columns:auto auto;
     justify-content: center;
     grid-column-gap:10%;
-    grid-row-gap:7vh;
+    grid-row-gap:7vw;
   }
 
   .grid-item {
@@ -251,6 +250,11 @@ h1{
   }
 
   #item5 {
+    height:50vw;
+    width:50vw;
+  }
+
+  #item12{
     height:50vw;
     width:50vw;
   }
@@ -337,7 +341,6 @@ h1{
     border-style: none;
     text-align: center;
   }
-
 }
 
 .grid-item {
@@ -364,23 +367,23 @@ h1{
 }
 
 #item1 {
-  background-image: url('../assets/Clyde.jpg');
+  background-image: url('../assets/images/Clyde.jpg');
 }
 
 #item2 {
-  background-image: url('../assets/Metal Bug armor.png');
+  background-image: url('../assets/images/Duglesworth_Marked.png');
 }
 
 #item3 {
-  background-image: url('../assets/Typography.png');
+  background-image: url('../assets/images/Typography.png');
 }
 
 #item4 {
-  background-image: url('../assets/DoubleExposure.jpg');
+  background-image: url('../assets/images/DoubleExposure.jpg');
 }
 
 #item5{
-  background-image: url('../assets/dimension defenders final.png');
+  background-image: url('../assets/images/dimension defenders final.png');
   background-position: left;
   height:30vw;
   width:30vw;
@@ -391,24 +394,46 @@ h1{
 #item5 p {
   margin-top: 32vw;
 }
+
 #item6 {
-  background-image: url('../assets/GlowEffect.jpg');
+  background-image: url('../assets/images/Saam.png');
 }
 
 #item7 {
-  background-image: url('../assets/GlowEffect2.jpg');
+  background-image: url('../assets/images/GlowEffect2.jpg');
 }
 
 #item8 {
-  background-image: url('../assets/Minimal_Soul.png');
+  background-image: url('../assets/images/Minimal_Soul.png');
 }
 
 #item9 {
-  background-image: url('../assets/Minimal_Spiderman.png');
+  background-image: url('../assets/images/Minimal_Spiderman.png');
 }
 
-#item10, #item11, #item12, #item13 {
-  opacity: 0;
+#item10 {
+  background-image: url('../assets/images/Minimal_Oculus.png');
+}
+
+#item11 {
+  background-image: url('../assets/images/Sunny.png');
+}
+
+#item12 {
+  background-image: url('../assets/images/Nate_Delia_Pride.jpg');
+  background-position: left;
+  height:30vw;
+  width:30vw;
+  grid-column:3/5;
+  grid-row: 4/6;
+}
+
+#item12 p {
+  margin-top: 32vw;
+}
+
+#item13 {
+  background-image: url('../assets/images/Amafrey_Marked.png');
 }
 /*End Portfolio Grid code*/
 
@@ -444,7 +469,7 @@ video:hover{
 }
 
 #spacer{
-  height:5vw;
+  height:200px;
 }
 /*End Animation Gallery Code*/
 
