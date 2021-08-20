@@ -264,6 +264,10 @@ header h1{
     margin-right:auto;
     width:65vw;
   }
+  
+  label{
+    color:#ff6b35;
+  }
 
   input {
     background-color:#efefd0;
@@ -273,7 +277,6 @@ header h1{
     background-position: center;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    color:darkgrey;
     border: 2px solid black;
     border-radius: 15px;
     font-family: 'Hero', Quicksand, sans-serif;
@@ -322,7 +325,6 @@ header h1{
     border: 2px solid black;
     border-radius: 15px;
     font-family: 'Hero', Quicksand, sans-serif;
-    color:darkgrey;
     width:90%;
     margin-left: 4%;
     margin-right: 4%;
@@ -512,6 +514,10 @@ video:hover{
     top:200px;
   }
 
+  label{
+    color:#ff6b35;
+  }
+
   input {
     background-color:#efefd0;
     background-image: url('../assets/Paper_Texture.jpg');
@@ -567,7 +573,6 @@ video:hover{
     border: 2px solid black;
     border-radius: 15px;
     font-family: 'Hero', Quicksand, sans-serif;
-    color:darkgrey;
     width:90%;
     margin-left: 4%;
     margin-right: 4%;
