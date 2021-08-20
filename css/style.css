@@ -28,15 +28,6 @@ body {
   background-position: center;
 }
 
-/*Adjust font sizes for displays*/
-
-@media only screen and (max-width:900px){
-  body{
-    font-size: 120%;
-  }
-}
-
-
 footer {
   clear:both;
   text-align:center;
@@ -237,11 +228,15 @@ header h1{
 
 @media screen and (max-width:900px) {
 
+  body{
+    font-size: 120%;
+  }
+
   .portfolioGrid{
     grid-template-columns:auto auto;
     justify-content: center;
     grid-column-gap:10%;
-    grid-row-gap:7vw;
+    grid-row-gap:7vh;
   }
 
   .grid-item {
@@ -257,6 +252,8 @@ header h1{
   #item12{
     height:50vw;
     width:50vw;
+    grid-column:1/3;
+    grid-row: 8/10;
   }
 
   /* Contact page changes */
@@ -421,11 +418,16 @@ header h1{
 
 #item12 {
   background-image: url('../assets/images/Nate_Delia_Pride.jpg');
-  background-position: left;
   height:30vw;
   width:30vw;
-  grid-column:3/5;
-  grid-row: 4/6;
+}
+
+/*Position Item12 for desktop */
+@media screen and (min-width:900px) {
+  #item12{
+    grid-column:3/5;
+    grid-row: 4/6;
+  }
 }
 
 #item12 p {
@@ -469,7 +471,7 @@ video:hover{
 }
 
 #spacer{
-  height:200px;
+  height:20vw;
 }
 /*End Animation Gallery Code*/
 
