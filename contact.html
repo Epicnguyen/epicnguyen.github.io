@@ -19,11 +19,18 @@
       <header>
         <h1>Contact</h1>
       </header>
-      
-      <form>
-        <input type="text" name="email" value="Email:"/><br/>
-        <input type="text" name="subject" value="Subject:"/><br/>
-        <textarea name="message" rows="20" cols="26">Message:</textarea> </br>
+
+      <form action="https://formspree.io/f/mdoypwyn" method="POST">
+
+        <label for="email">Email:</label>
+        <input type="email" name="_replyto" id="email" placeholder="email@email.com" required=""/><br/>
+
+        <label>Subject:</label>
+        <input type="text" name="_subject" placeholder="Commisions, Questions, Hiring Request, etc." required=""/><br/>
+
+        <label>Message:</label>
+        <textarea rows="5" name="message" id="message" placeholder="Tell me what you want to tell me now..." required=""></textarea></br>
+
         <!--Bottom buttons-->
         <input type="submit" name="submit" value="Send!"/>
         <input type="reset" name="clear" value="Clear Form"/>

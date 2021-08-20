@@ -523,7 +523,6 @@ video:hover{
     font-family: 'Hero', Quicksand, sans-serif;
     border: 2px solid black;
     border-radius: 15px;
-    color:darkgrey;
     width:90%;
     margin-left: 4%;
     margin-right: 4%;
@@ -557,7 +556,7 @@ video:hover{
     color:#f7c59f;
   }
 
-  textarea {
+  textarea{
     background-color:#efefd0;
     background-image: url('../assets/Paper_Texture.jpg');
     background-blend-mode: overlay;
