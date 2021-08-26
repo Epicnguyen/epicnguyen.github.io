@@ -151,8 +151,27 @@ a{
   color: #ff6b35;
 }
 
+/*Style nav Icon for mobile*/
+.navIcon {
+  position:sticky;
+  float:right;
+  top:15px;
+  border:none;
+  border-radius:50%;
+  background-image: url("../assets/Menu_Button.png");
+  background-color: #408cff;
+  background-size: 40px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 2px 5px;
+  width:50px;
+  height:50px;
+  margin:10px;
+}
+
 /* Style the side navigation */
 nav {
+    display: block;
     height: 100%;
     width: 200px;
     position: fixed;
@@ -185,6 +204,10 @@ nav button:hover {
     color: #0a4194;
 }
 
+nav .close, .navIcon{
+  display:none;
+}
+
 /* Change the size and alignment of the logo */
 .homeLogo{
   background-image: url("../assets/Toan_Logo_Square_Black.png");
@@ -192,6 +215,7 @@ nav button:hover {
   background-repeat: no-repeat;
   background-position: center;
   height:180px;
+  color:rgba(0, 0, 0, 0);
   margin-top:10px;
 }
 
@@ -200,6 +224,7 @@ nav button:hover {
   background-image: url("../assets/Toan_Logo_Square_Color.png");
   background-size: 210px,210px;
   border-radius: 10px;
+  color:rgba(0, 0, 0, 0);
   background-color: #efefd0;
 }
 /*end nav code */
@@ -299,8 +324,8 @@ header h1{
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: rgb(10,65, 148); /* Fallback color */
+  background-color: rgba(10, 65, 148, 0.9); /* Dark w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -317,7 +342,7 @@ header h1{
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
+  color: #efefd0;
   padding: 10px 0;
   height: 150px;
 }
@@ -339,7 +364,7 @@ header h1{
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: #f7c59f;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -347,7 +372,7 @@ header h1{
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: #ff6b35;
   text-decoration: none;
   cursor: pointer;
 }
@@ -628,9 +653,39 @@ video:hover{
 }
 
 /*Phone display*/
-@media only screen and (max-width:500px;) {
+@media only screen and (max-width:500px) {
   nav {
     display:none;
+    width:100%;
+    background-color: rgba(64, 140, 255, 1.0);
+    animation-name: zoom;
+    animation-duration: 0.4s;
+  }
+
+  nav .close {
+    display:block;
+  }
+
+  nav button{
+    width:100%;
+  }
+
+  .homeLogo {
+    background-image:none;
+    height:auto;
+    margin-top: 100px;
+    color:black;
+  }
+
+  .homeLogo:hover{
+    background-image:none;
+    background-color: #f7c59f;
+    color: #0a4194;
+    border-radius: 0px;
+  }
+
+  .navIcon {
+    display: block;
   }
 
   main {
@@ -639,7 +694,7 @@ video:hover{
   }
 }
 
-/*dsiplay Contat Page for Desktop */
+/*dsiplay Contact Page for Desktop */
 @media screen and (min-width:1051px) {
   .contactInfo {
     width: 45vw;

@@ -8,12 +8,16 @@
   </head>
   <body>
 
-    <nav>
+    <button class="navIcon" onclick="document.getElementById('nav').style.display = 'block';">
+    </button>
+
+    <nav id="nav">
       <a href="index.html"><button class="homeLogo"></button></a>
       <a href="artwork.html"><button id="artwork">Artwork</button></a>
       <a href="animations.html"><button id="animations">Animations</button></a>
       <a href="about.html"><button id="about">About Me</button></a>
       <a href="contact.html"><button id="contact" style="color:#efefd0;">Contact</button></a>
+      <span class="close">&times;</span>
     </nav>
 
     <main class="contactMain">
