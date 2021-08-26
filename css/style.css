@@ -91,7 +91,6 @@ a{
 /*Give each element a hover border*/
 .t {
   background-image: url("../assets/Toan_Logo_T.png");
-  display:block;
   margin-right: auto;
 }
 
@@ -105,7 +104,6 @@ a{
 
 .o {
   background-image: url("../assets/Toan_Logo_O.png");
-  display:block;
   margin-right: auto;
 }
 
@@ -119,9 +117,7 @@ a{
 
 .a {
   background-image: url("../assets/Toan_Logo_A.png");
-  display:block;
   margin-right: auto;
-  flex-grow: 2;
 }
 
 .a .overlay {
@@ -134,7 +130,6 @@ a{
 
 .n {
   background-image: url("../assets/Toan_Logo_N.png");
-  display:block;
   margin-right: auto;
 }
 
@@ -254,15 +249,246 @@ header h1{
   padding: 10px;
 }
 
-/*mobile display*/
-@media screen and (max-width:900px) {
+
+.grid-item {
+  height:15vw;
+  width: 15vw;
+  text-align: center;
+  border-radius: 50%;
+  font-size:90%;
+  color:#ff6b35;
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 2px 10px black;
+}
+
+.grid-item img {
+  display:none;
+  align-content: center;
+  width:100%;
+}
+
+.grid-item p {
+  font-family: 'Hero', Quicksand, sans-serif;
+  margin-top:16vw;
+}
+
+.big-item {
+  height:32vw;
+  width:32vw;
+}
+
+.big-item p {
+  margin-top: 33vw;
+}
+
+.grid-item:hover{
+  opacity:0.8;
+  box-shadow: 0px 0px 10px #ff6b35;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+@keyframes zoom {
+  0% {transform:scale(0)}
+  75% {transform:scale(1.10)}
+  100% {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+#item1 {
+  background-image: url('../assets/images/Clyde.jpg');
+}
+
+#item2 {
+  background-image: url('../assets/images/Duglesworth_Marked.png');
+}
+
+#item3 {
+  background-image: url('../assets/images/Typography.png');
+}
+
+#item4 {
+  background-image: url('../assets/images/DoubleExposure.jpg');
+}
+
+
+#item5{
+  background-position: left;
+  background-image: url('../assets/images/dimension defenders.png');
+  grid-column:1/3;
+  grid-row: 2/4;
+}
+
+#item6 {
+  background-image: url('../assets/images/Saam.png');
+}
+
+#item7 {
+  background-image: url('../assets/images/GlowEffect2.jpg');
+}
+
+#item8 {
+  background-image: url('../assets/images/Minimal_Soul.png');
+}
+
+#item9 {
+  background-image: url('../assets/images/Minimal_Spiderman.png');
+}
+
+#item10 {
+  background-image: url('../assets/images/Minimal_Oculus.png');
+}
+
+#item11 {
+  background-image: url('../assets/images/Sunny.png');
+}
+
+#item12 {
+  background-image: url('../assets/images/Nate_Delia_Pride.jpg');
+}
+
+/*Position Item12 for desktop */
+@media screen and (min-width:900px) {
+  #item12{
+    grid-column:3/5;
+    grid-row: 4/6;
+  }
+}
+
+
+#item13 {
+  background-image: url('../assets/images/Amafrey_Marked.png');
+}
+
+#item14 {
+  display: none;
+}
+/*End Portfolio Grid code*/
+
+/* Organize the animation gallery */
+
+.animationGrid {
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2%;
+  grid-row-gap:2%;
+  align-content:center;
+  padding: 10px;
+}
+
+
+video{
+  height:30vw;
+  width:30vw;
+  border-radius: 15px;
+  background-color: #0a4194;
+  box-shadow: 0px 5px 10px;
+}
+
+video:hover{
+  box-shadow: 0px 0px 10px #ff6b35;
+}
+
+.animationGrid h2 {
+  display: block;
+  font-weight: lighter;
+  width:30vw;
+  text-align: center;
+}
+
+#spacer{
+  height:20vw;
+}
+/*End Animation Gallery Code*/
+
+/*Style Contact Page*/
+.contactInfo h2 {
+  text-decoration:underline;
+}
+
+/* Style Contact links */
+.contactInfo a{
+  text-decoration: none;
+  color: #408cff;
+}
+
+/* Style Contact Link hovers */
+
+.contactInfo a:hover{
+  text-decoration: underline;
+  color: #ff6b35;
+}
+
+/*Tablet display & Phone display*/
+@media only screen and (max-width:1050px) {
 
   body{
     font-size: 120%;
   }
 
-  /*Landing Mobile Page*/
-  /*End Landing Mobile Page*/
   /*Mobile Gallery*/
   .portfolioGrid{
     grid-template-columns:auto auto;
@@ -276,14 +502,20 @@ header h1{
     width:25vw;
   }
 
-  #item5 {
+  .grid-item p {
+    margin-top:26vw;
+  }
+
+  .big-item {
     height:50vw;
     width:50vw;
   }
 
+  .big-item p {
+    margin-top:53vw;
+  }
+
   #item12{
-    height:50vw;
-    width:50vw;
     grid-column:1/3;
     grid-row: 8/10;
   }
@@ -395,244 +627,20 @@ header h1{
   /*End mobile Contact Page */
 }
 
-.grid-item {
-  height:15vw;
-  width: 15vw;
-  text-align: center;
-  border-radius: 50%;
-  font-size:90%;
-  color:#ff6b35;
-  border: none;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 0px 2px 10px black;
-}
-
-.grid-item img {
-  display:none;
-  align-content: center;
-  width:100%;
-}
-
-.grid-item p {
-  font-family: 'Hero', Quicksand, sans-serif;
-  margin-top:16vw;
-}
-
-
-.grid-item:hover{
-  opacity:0.8;
-  box-shadow: 0px 0px 10px #ff6b35;
-}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.4s;
-}
-
-@keyframes zoom {
-  0% {transform:scale(0)}
-  75% {transform:scale(1.10)}
-  100% {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
+/*Phone display*/
+@media only screen and (max-width:500px;) {
+  nav {
+    display:none;
   }
-}
-#item1 {
-  background-image: url('../assets/images/Clyde.jpg');
-}
 
-#item2 {
-  background-image: url('../assets/images/Duglesworth_Marked.png');
-}
-
-#item3 {
-  background-image: url('../assets/images/Typography.png');
-}
-
-#item4 {
-  background-image: url('../assets/images/DoubleExposure.jpg');
-}
-
-
-#item5{
-  background-position: left;
-  background-image: url('../assets/images/dimension defenders.png');
-  margin-top:2vw;
-  height:32vw;
-  width:32vw;
-  grid-column:1/3;
-  grid-row: 2/4;
-}
-
-#item5 p {
-  margin-top: 33vw;
-}
-
-#item6 {
-  background-image: url('../assets/images/Saam.png');
-}
-
-#item7 {
-  background-image: url('../assets/images/GlowEffect2.jpg');
-}
-
-#item8 {
-  background-image: url('../assets/images/Minimal_Soul.png');
-}
-
-#item9 {
-  background-image: url('../assets/images/Minimal_Spiderman.png');
-}
-
-#item10 {
-  background-image: url('../assets/images/Minimal_Oculus.png');
-}
-
-#item11 {
-  background-image: url('../assets/images/Sunny.png');
-}
-
-#item12 {
-  margin-top:2vw;
-  background-image: url('../assets/images/Nate_Delia_Pride.jpg');
-  height:32vw;
-  width:32vw;
-}
-
-/*Position Item12 for desktop */
-@media screen and (min-width:900px) {
-  #item12{
-    grid-column:3/5;
-    grid-row: 4/6;
+  main {
+    margin-left: 0px;
+    margin-right:50px;
   }
 }
 
-#item12 p {
-  margin-top: 33vw;
-}
-
-#item13 {
-  background-image: url('../assets/images/Amafrey_Marked.png');
-}
-
-#item14 {
-  display: none;
-}
-/*End Portfolio Grid code*/
-
-/* Organize the animation gallery */
-
-.animationGrid {
-  display:grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 2%;
-  grid-row-gap:2%;
-  align-content:center;
-  padding: 10px;
-}
-
-
-video{
-  height:30vw;
-  width:30vw;
-  border-radius: 15px;
-  background-color: #0a4194;
-  box-shadow: 0px 5px 10px;
-}
-
-video:hover{
-  box-shadow: 0px 0px 10px #ff6b35;
-}
-
-.animationGrid h2 {
-  display: block;
-  font-weight: lighter;
-  width:30vw;
-  text-align: center;
-}
-
-#spacer{
-  height:20vw;
-}
-/*End Animation Gallery Code*/
-
-/*Style Contact Page*/
-.contactInfo h2 {
-  text-decoration:underline;
-}
-
-/* Style Contact links */
-.contactInfo a{
-  text-decoration: none;
-  color: #408cff;
-}
-
-/* Style Contact Link hovers */
-
-.contactInfo a:hover{
-  text-decoration: underline;
-  color: #ff6b35;
-}
-
-@media screen and (min-width:900px) {
+/*dsiplay Contat Page for Desktop */
+@media screen and (min-width:1051px) {
   .contactInfo {
     width: 45vw;
     float:left;
@@ -718,4 +726,3 @@ video:hover{
 }
 
 }
-/*End contact Page Code*/
