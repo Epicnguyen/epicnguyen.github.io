@@ -202,6 +202,8 @@ nav button:hover {
 
 /* Change logo on hover */
 .homeLogo:hover {
+  background-image: url("../assets/Toan_Logo_Square_Color.png");
+  background-size: 210px,210px;
   border-radius: 10px;
   background-color: #efefd0;
 }
@@ -569,6 +571,10 @@ header h1{
 
 #item13 {
   background-image: url('../assets/images/Amafrey_Marked.png');
+}
+
+#item14 {
+  display: none;
 }
 /*End Portfolio Grid code*/
 
