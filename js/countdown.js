@@ -19,7 +19,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
   //display result in the timer
-  document.getElementById('timer').innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds...`;
+  document.getElementById('timer').innerHTML = `${days} days, <br/> ${hours} hours, <br/> ${minutes} minutes,<br/> and ${seconds} seconds...`;
 
   //in case the timer ends befre you get there:
   if (distance < 0) {

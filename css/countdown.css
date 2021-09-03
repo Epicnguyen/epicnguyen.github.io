@@ -15,9 +15,10 @@ body, html, main{
 }
 
 .logo {
-  position:absolute;
-  top:0;
-  left:16px;
+  width:150px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(-50%, 15%);
 }
 
 .logo img {
@@ -40,4 +41,14 @@ hr {
   border-radius: 15px;
   margin:auto;
   width:40%;
+}
+
+@media only screen and (max-width:500px) {
+  .logo img {
+    width:300px;
+  }
+
+  body{
+    font-size:120%;
+  }
 }
