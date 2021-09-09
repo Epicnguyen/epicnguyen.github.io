@@ -2,18 +2,18 @@
 
 @font-face {
   font-family: "Hero";
-  src: url(../assets/fonts/Hero/Hero-Regular.otf);
+  src: url('../assets/fonts/Hero/Hero-Regular.otf');
 }
 
 @font-face {
   font-family: "Hero";
-  src:url(../assets/fonts/Hero/Hero-Light.otf);
+  src:url('../assets/fonts/Hero/Hero-Light.otf');
   font-weight: 100;
 }
 
 @font-face {
   font-family: "Hero";
-  src:url(../assets/fonts/Hero/Hero-Bold.otf);
+  src:url('../assets/fonts/Hero/Hero-Bold.otf');
   font-weight: bold;
 }
 
