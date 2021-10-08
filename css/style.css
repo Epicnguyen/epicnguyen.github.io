@@ -1,25 +1,9 @@
-/* import hero font */
-
-@font-face {
-  font-family: "Hero";
-  src: url(../assets/fonts/Hero/Hero-Regular.otf);
-}
-
-@font-face {
-  font-family: "Hero";
-  src:url(../assets/fonts/Hero/Hero-Light.otf);
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Hero";
-  src:url(../assets/fonts/Hero/Hero-Bold.otf);
-  font-weight: bold;
-}
+/**import better Hero font...and Lato...jic**/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito&display=swap');
 
 body {
   height: 100%;
-  font-family: 'Hero', Quicksand, sans-serif;
+  font-family: 'Nunito', Quicksand, sans-serif;
   background-color: rgba(239,239,208,1);
   background-image: url("../assets/Paper_Texture.jpg");
   background-size:cover;
@@ -31,14 +15,14 @@ header {
   margin-top:50px;
   display:block;
   text-align: center;
-  font-family: 'Hero', Quicksand, sans-serif;
+  font-family: 'Nunito', Quicksand, sans-serif;
 }
 
 footer {
   clear:both;
   text-align:center;
   padding-top:50px;
-  font-family:'Hero', Quicksand, sans-serif;
+  font-family:'Nunito', Quicksand, sans-serif;
   color:#0a4194;
 }
 
@@ -82,7 +66,7 @@ a{
   height: 100%;
   width:100%;
   opacity: 0;
-  font-family: 'Hero', Quicksand, sans-serif;
+  font-family: 'Nunito', Quicksand, sans-serif;
   font-size: 100%;
   font-weight:bold;
   transition: 0.5s ease;
@@ -151,7 +135,7 @@ a{
   text-align: center;
   text-decoration: none;
   margin-top:10vh;
-  font-family:'Hero', Quicksand, sans-serif;
+  font-family:'Nunito', Quicksand, sans-serif;
   color: #ff6b35;
 }
 
@@ -189,7 +173,7 @@ nav {
 /* Side navigation links */
 nav button{
     cursor:pointer;
-    font-family: 'Hero', Quicksand, sans-serif;
+    font-family: 'Nunito', Quicksand, sans-serif;
     font-weight:bold;
     text-decoration: none;
     width:200px;
@@ -302,7 +286,7 @@ header h1{
 }
 
 .grid-item p {
-  font-family: 'Hero', Quicksand, sans-serif;
+  font-family: 'Nunito', Quicksand, sans-serif;
   margin-top:16vw;
 }
 
@@ -581,7 +565,7 @@ video:hover{
 
   /*Moblie Contact Page*/
   form {
-    font-family: 'Hero', Quicksand, sans-serif;
+    font-family: 'Nunito', Quicksand, sans-serif;
     display:block;
     margin-left: auto;
     margin-right:auto;
@@ -602,7 +586,7 @@ video:hover{
     background-attachment:fixed;
     border: 2px solid black;
     border-radius: 15px;
-    font-family: 'Hero', Quicksand, sans-serif;
+    font-family: 'Nunito', Quicksand, sans-serif;
     width:90%;
     margin-left: 4%;
     margin-right: 4%;
@@ -647,7 +631,7 @@ video:hover{
     background-attachment:fixed;
     border: 2px solid black;
     border-radius: 15px;
-    font-family: 'Hero', Quicksand, sans-serif;
+    font-family: 'Nunito', Quicksand, sans-serif;
     width:90%;
     margin-left: 4%;
     margin-right: 4%;
@@ -740,7 +724,7 @@ video:hover{
     background-position: center;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    font-family: 'Hero', Quicksand, sans-serif;
+    font-family: 'Nunito', Quicksand, sans-serif;
     border: 2px solid black;
     border-radius: 15px;
     width:90%;
@@ -786,7 +770,7 @@ video:hover{
     background-attachment:fixed;
     border: 2px solid black;
     border-radius: 15px;
-    font-family: 'Hero', Quicksand, sans-serif;
+    font-family: 'Nunito', Quicksand, sans-serif;
     width:90%;
     margin-left: 4%;
     margin-right: 4%;
