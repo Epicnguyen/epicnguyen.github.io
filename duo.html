@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toan Portfolio</title>
+  </head>
+  <body>
+
+    <nav id="nav">
+      <a href="index.html"><button class="homeLogo">Home</button></a>
+      <a href="portfolio.html"><button id="portfolio" style="color:#efefd0;">Portfolio</button></a>
+      <a href="artwork.html"><button id="artwork">Artwork</button></a>
+      <a href="videos.html"><button id="videos">Videos</button></a>
+      <a href="about.html"><button id="about">About Me</button></a>
+      <a href="contact.html"><button id="contact">Contact</button></a>
+      <span class="close">&times;</span>
+    </nav>
+
+    <main>
+      <header>
+        <h1>My Portfolio</h1>
+      </header>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="./assets/images/portfolio/DUO Logo.png" alt="DUO Logo"style="width:100%">
+          <h2 class="text">04: Department of Uneathly Occurences</h2>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <div class="flex-parent">
+            <div class="details">
+              <h3>The "Company":</h3>
+              <p>I was tasked (by myself) with making a brandbook for a company that "doesn't exist." This company would be called the Department of Unearthly Occurences, or DUO for short. This company would probably, maybe, function similar to the Men In Black, where they clean up and generally obsure any supernatural occurences from the eyes of the general public. As such I felt I needed to effectively design two logos for the brand book: their "official" logo and their "actual" logo. So I would have ended up making a dummy company for them...something like Compass Security Solusions, or CSS or something...</p>
+            </div>
+            <img src="./assets/images/portfolio/DUO Stationary.png" class="process" alt="DUO Stationary" style="width:100%">
+          </div>
+          <div class="text">The Impossible Task</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="./assets/images/portfolio/DUO Sketches.jpg" class="process" alt="DUO Sketches" style="width:100%">
+          <img src="./assets/images/portfolio/DUO Logos.png" alt="DUO Logos" style="width:100%">
+          <div class="text">Initial Logo Designs</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="./assets/images/portfolio/DUO BrandBook (1).jpg" alt="DUO Brand Book Page 1" class="process" style="width:100%">
+          <img src="./assets/images/portfolio/DUO BrandBook (2).jpg" alt="DUO Brand Book Page 2" class="process" style="width:100%">
+          <img src="./assets/images/portfolio/DUO BrandBook (3).jpg" alt="DUO Brand Book Page 3" class="process" style="width:100%">
+          <img src="./assets/images/portfolio/DUO BrandBook (4).jpg" alt="DUO Brand Book Page 4" class="process" style="width:100%">
+          <img src="./assets/images/portfolio/DUO BrandBook (5).jpg" alt="DUO Brand Book Page 5" class="process" style="width:100%">
+          <img src="./assets/images/portfolio/DUO BrandBook (6).jpg" alt="DUO Brand Book Page 6" class="process" style="width:100%">
+          <img src="./assets/images/portfolio/DUO BrandBook (7).jpg" alt="DUO Brand Book Page 7" class="process" style="width:100%">
+          <div class="text">Stationery Mockup</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+    <script src="./js/portfolio.js"></script>
+    </main>
+  </body>
+</html>

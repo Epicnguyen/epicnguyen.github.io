@@ -130,6 +130,21 @@ a{
   opacity:1;
 }
 
+.portfolio {
+  cursor:pointer;
+  background-image: url("../assets/Portfolio_Button.png");
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.portfolio .overlay {
+  text-align: center;
+  color: #f7c59f;
+}
+
+.portfolio:hover .overlay{
+  opacity:1;
+}
 
 .description {
   text-align: center;
