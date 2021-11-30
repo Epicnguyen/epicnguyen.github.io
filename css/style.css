@@ -5,9 +5,10 @@ body {
   height: 100%;
   font-family: 'Nunito', Quicksand, sans-serif;
   background-color: rgba(239,239,208,1);
-  background-image: url("../assets/Paper_Texture.jpg");
+  background-image: url("../assets/Toan_Paper.png");
   background-size:cover;
-  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
