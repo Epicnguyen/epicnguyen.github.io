@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Toan Portfolio</title>
+  </head>
+  <body>
+
+    <button class="navIcon" onclick="document.getElementById('nav').style.display = 'block';">
+    </button>
+
+    <nav id="nav">
+      <a href="index.html"><button class="homeLogo">Home</button></a>
+      <a href="portfolio.html"><button id= "Portfolio">Portfolio</button></a>
+      <a href="artwork.html"><button id="artwork">Artwork</button></a>
+      <a href="videos.html"><button id="vidoes" style="color:#efefd0;">Videos</button></a>
+      <a href="about.html"><button id="about">About Me</button></a>
+      <a href="contact.html"><button id="contact">Contact</button></a>
+      <span class="close">&times;</span>
+    </nav>
+
+    <main>
+      <header>
+        <h1>Videos</h1>
+        <p>A collection of my animations and videos.</p>
+      </header>
+      <!-- basic elements of the portfolio grid -->
+      <div class="animationGrid">
+          <video loop muted id="video1" controls>
+            <source src="./assets/Videos/AnimatedCharacter.mp4" type="video/mp4"/>
+          </video>
+
+          <video loop muted id="video2" controls>
+            <source src="./assets/Videos/3DScene.mp4" type="video/mp4"/>
+          </video>
+
+          <h2 id="title1">After Effects Walk Cycle</h2>
+          <h2 id="title2">2.5D Scene</h2>
+
+          <video loop muted id="video3" controls>
+            <source src="./assets/Videos/OrbitingLogo.mp4" type="video/mp4"/>
+          </video>
+
+          <video loop muted id="video4" controls>
+            <source src="./assets/Videos/Full Episode 5 animation.mp4" type="video/mp4"/>
+          </video>
+
+          <h2 id="title3">Orbiting Logo</h2>
+          <h2 id="title4">Heinous Investigations Animation</h2>
+
+          <video loop muted id="video6" controls>
+            <source src="./assets/Videos/T_Nguyen_RethreadPrototype.mp4" type="video/mp4"/>
+          </video>
+
+          <video loop muted id="video7" controls>
+            <source src="./assets/Videos/DummyWalkCycle.mp4" type="video/mp4"/>
+          </video>
+
+          <h2 id="title3">Rethread Prototype</h2>
+          <h2 id="title4">Walk Cycle Animation</h2>
+
+      </div>
+      <div id=spacer></div>
+      <script src="./js/artwork.js"></script>
+      <footer>
+        <hr/>
+        <h2>&copy; Toan Nguyen 2021<br/> All rights reserved</h2>
+      </footer>
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toan Portfolio</title>
+  </head>
+  <body>
+
+    <nav id="nav">
+      <a href="index.html"><button class="homeLogo">Home</button></a>
+      <a href="portfolio.html"><button id= "portfolio" style="color:#efefd0;">Portfolio</button></a>
+      <a href="artwork.html"><button id="artwork">Artwork</button></a>
+      <a href="videos.html"><button id="videos">Videos</button></a>
+      <a href="about.html"><button id="about">About Me</button></a>
+      <a href="contact.html"><button id="contact">Contact</button></a>
+      <span class="close">&times;</span>
+    </nav>
+
+    <main>
+      <header>
+        <h1>My Portfolio</h1>
+      </header>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="./assets/images/portfolio/MCI Logo Revamp-03.png" style="width:100%">
+          <h2 class="text">01: Master Crafters Incorporated Logo</h2>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <div class="flex-parent">
+            <div class="details">
+              <h3>The Brief:</h3>
+              <p>Stuck for design ideas, I asked a friend of mine if we could run through a design brief for a fictional company that he used in a TTRPG. The company is called Master Crafters Incorporated, a galactic super conglomorate that has dealing in "...all forms of industry. It's kinda like space amazon." My friend wanted a color pallette that used gold, gray and a dark purple, but also wanted the logo to have a steampunk feeling. After attempting to adhere to these requirements, the class agreed that I did a good job with the brief that was given, but I should try it again with the traditional Steampunk colors as well. The result is the logo depicted above.</p>
+            </div>
+            <img src="./assets/images/portfolio/MCI_Logos.png" alt="MCI Logos" style="width:100%">
+          </div>
+          <div class="text">MCI Design Brief</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="./assets/images/portfolio/MCI_Brief.jpg" class="process" alt="MCI Design Brief" style="width:100%">
+          <img src="./assets/images/portfolio/MCI_Sketch.jpg" class="process" alt="MCI Stationery Mockup" style="width:100%">
+          <div class="text">Early Ideas and Sketches</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="./assets/images/portfolio/MCI_Stationery_Mockup.png" class="process" alt="MCI Design Brief" style="width:100%">
+          <div class="text">Stationery Mockup</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+    <script src="./js/portfolio.js"></script>
+    </main>
+  </body>
+</html>
