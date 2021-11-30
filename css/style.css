@@ -389,7 +389,7 @@ header h1{
 }
 
 #item4 {
-  background-image: url('../assets/images/DoubleExposure.jpg');
+  background-image: url('../assets/images/Autumn Advantage Magazine.png');
 }
 
 
@@ -531,7 +531,7 @@ video:hover{
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 50vw;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -576,13 +576,31 @@ video:hover{
   transition: 0.4s;
 }
 
-.process:hover{
-  width:50%;
-}
 /* Details Text */
 .details{
   padding-left: 1vw;
 }
+
+.details p{
+  text-indent: 20px;
+}
+
+iframe{
+  width:100%;
+  height:80vw;
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border:none;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+}
+/*Padding for Screen Container*/
+.screen-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 /* Number text (1/3 etc) */
 .numbertext {
   color: #efefd0;
