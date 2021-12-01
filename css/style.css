@@ -47,9 +47,6 @@ footer hr {
   align-items: baseline;
 }
 
-.buttonRow{
-margin:150px;
-}
 
 .menu button {
   display:block;
@@ -136,6 +133,10 @@ a{
   opacity:1;
 }
 
+.portfolio, .resume{
+  margin:10px;
+}
+
 .portfolio {
   cursor:pointer;
   background-image: url("../assets/Portfolio_Button.png");
@@ -149,6 +150,22 @@ a{
 }
 
 .portfolio:hover .overlay{
+  opacity:1;
+}
+
+.resume {
+  cursor:pointer;
+  background-image: url("../assets/Resume_Button.png");
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.resume .overlay {
+  text-align: center;
+  color: #408cff;
+}
+
+.resume:hover .overlay{
   opacity:1;
 }
 
