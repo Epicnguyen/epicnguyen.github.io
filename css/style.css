@@ -52,6 +52,7 @@ footer hr {
   display:block;
   height:300px;
   width:300px;
+  margin: 10px;
   border:none;
   background-color: rgba(0,0,0,0);
   background-size:cover;
@@ -135,6 +136,8 @@ a{
 
 .portfolio, .resume{
   margin:10px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 30px rgba(10,10,10,0.5);
 }
 
 .portfolio {
