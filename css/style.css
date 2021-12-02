@@ -450,7 +450,7 @@ header h1{
 }
 
 #item8 {
-  background-image: url('../assets/images/Minimal_Soul.png');
+  background-image: url('../assets/images/4 of Diamonds.png');
 }
 
 #item9 {
@@ -483,7 +483,23 @@ header h1{
 }
 
 #item14 {
+  background-image:url('../assets/images/6 of Spades.png');
+}
+
+#item15 {
+  background-image:url('../assets/images/King of Spades.png');
+}
+
+#item16 {
+  background-image:url('../assets/images/Minimal_Soul.png');
+}
+
+#item17 {
   background-image:url('../assets/images/Yins_Dance.png');
+}
+
+#item18 {
+  background-image:url('../assets/images/Jack of Clubs.png');
 }
 /*End Portfolio Grid code*/
 
