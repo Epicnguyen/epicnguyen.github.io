@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Playing Cards - Toan Portfolio</title>
+  </head>
+  <body>
+
+    <nav id="nav">
+      <a href="index.html"><button class="homeLogo">Home</button></a>
+      <a href="portfolio.html"><button id="portfolio" style="color:#efefd0;">Portfolio</button></a>
+      <a href="artwork.html"><button id="artwork">Artwork</button></a>
+      <a href="videos.html"><button id="videos">Videos</button></a>
+      <a href="about.html"><button id="about">About Me</button></a>
+      <a href="contact.html"><button id="contact">Contact</button></a>
+      <a href="resume.html"><button id="resume">Resume</button></a>
+      <span class="close">&times;</span>
+    </nav>
+
+    <main>
+      <header>
+        <h1>My Portfolio</h1>
+      </header>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="./assets/images/portfolio/Ace_Scene.png" alt="The Tragedy of the Aces" class="process" style="width:100%">
+          <h2 class="text">05: My Character Playing Card Deck</h2>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <div class="flex-parent">
+            <div class="details">
+              <h3>My Gripe:</h3>
+              <p>My Dad has 3 decks of playing cards each themed around one of the original Star Wars movies. Each card in the deck shwcases a scene from the movie, and had fairly iconic Star Wars styling to it, but I had some problems with the deck. For starters the scenes were just kinda slapped on with wild abandon, no two cards of the same value or the same suit had remotely similar scenes. In addition, the characters for the card's value were very small and easy to miss, and each deck felt the need to use non-standard colors for the corner pips like blue and green. So basically as soon as you drew a card it took you a moment to figure out what the card was. </p>
+              <p>So I decided to make my own playing card deck that remidies these problems. I was getting really passionate about character design, so I wanted to make a deck of popular characters whose outfits I redesigned to fit the suit they function for. I also decided each suit should have a theme, so hearts were loving and caring characters, clubs were wild and random chaaracters, diamonds were harsh and lethal, and spades were smart and witty. Futhermore, I decided that a character chosen for a card HAD to relate to the card's value in some way as well. So, Ben 10 is obviously a 10 card but Spider-man is an 8 because spiders have eight legs. I will admit some stretched further than others, but I also didn't let the challenge end there, to be fair. I also wanted those that got a 4 of a kind to be rewarded with a fun scene of some sort, to extra give insentivise holding on to your three-of-a-kind and also to give the deck more cohesion. The result is this beautiful deck that I spent about 6 months designing. Here are just some highlights of it.</p>
+            </div>
+            <img src="./assets/images/portfolio/Joker_Scene.png" alt="Two Dueling Jokers" style="width:100%"/>
+          </div>
+          <div class="text">The Call of the Cards</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="./assets/images/portfolio/aces_sketch.jpg" class="process" alt="Early Aces Sketch" style="width:100%"/>
+          <img src="./assets/images/portfolio/joker_poses.png" class="process" alt="Joker Poses" style="width:100%"/>
+          <div class="text">Early Sketches (The Jokers used the same pose)</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="./assets/images/portfolio/4_Scene.png" class="process" alt="The 4's Scene" style="width:100%"/>
+          <img src="./assets/images/portfolio/6_Scene.png" class="process" alt="The 6's Scene" style="width:100%"/>
+          <img src="./assets/images/portfolio/9_Scene.png" class="process" alt="The 9's Scene" style="width:100%"/>
+          <img src="./assets/images/portfolio/Jack_Scene.png" class="process" alt="The Jacks Scene" style="width:100%"/>
+          <img src="./assets/images/portfolio/Queen_Scene.png" class="process" alt="The Queens Scene" style="width:100%"/>
+          <img src="./assets/images/portfolio/King_Scene.png" class="process" alt="The Kings Scene" style="width:100%"/>
+          <div class="text">A Few Complete Scenes</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="./assets/images/portfolio/PlayingCard_MockUp.png" class="process" alt="Business Style Card Mockup" style="width:100%"/>
+          <img src="./assets/images/portfolio/PlayingCard_MockUp_2.png" class="process" alt="Casino Style Card Mockup" style="width:100%"/>
+          <div class="text">Final Mockups</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+
+    <script src="./js/portfolio.js"></script>
+    </main>
+  </body>
+</html>
