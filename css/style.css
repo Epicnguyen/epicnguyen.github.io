@@ -436,7 +436,7 @@ header h1{
 
 #item5{
   background-position: left;
-  background-image: url('../assets/images/dimension defenders.png');
+  background-image: url('../assets/images/Shopping_Comic.png');
   grid-column:1/3;
   grid-row: 2/4;
 }
@@ -479,11 +479,11 @@ header h1{
 
 
 #item13 {
-  background-image: url('../assets/images/Varis_Marked.png');
+  background-image: url('../assets/images/Disroza.png');
 }
 
 #item14 {
-  background-image:url('../assets/images/6 of Spades.png');
+  background-image:url('../assets/images/Spooky_Mountain.png');
 }
 
 #item15 {
@@ -491,11 +491,11 @@ header h1{
 }
 
 #item16 {
-  background-image:url('../assets/images/Minimal_Soul.png');
+  background-image:url('../assets/images/Van_Wycks_Griffin.png');
 }
 
 #item17 {
-  background-image:url('../assets/images/Yins_Dance.png');
+  background-image:url('../assets/images/Yin_Concept.png');
 }
 
 #item18 {
@@ -515,7 +515,7 @@ header h1{
 }
 
 
-video{
+#video{
   height:30vw;
   width:30vw;
   border-radius: 15px;
@@ -524,7 +524,7 @@ video{
   transition:0.4s;
 }
 
-video:hover{
+#video:hover{
   box-shadow: 0px 0px 10px #ff6b35;
 }
 
